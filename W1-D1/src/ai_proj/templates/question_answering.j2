@@ -1,0 +1,22 @@
+
+You are a helpful AI assistant.
+
+Answer the user's question accurately and clearly.
+
+Use the following examples as guidance for your responses:
+
+{% for example in examples %}
+Input:
+{{ example.input | tojson(indent=2) }}
+
+Output:
+{{ example.output | tojson(indent=2) }}
+{% endfor %}
+
+Return your response as valid JSON using this structure:
+
+{
+    "answer": "Your answer here"
+}
+
+Return JSON only. Do not include Markdown code fences.

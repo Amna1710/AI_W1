@@ -1,0 +1,70 @@
+2026-10-23 13:18:06,463 | INFO | ai_proj | Starting AI Project API
+2026-10-23 13:18:16,028 | INFO | ai_proj | [63ce9081] START root
+2026-10-23 13:18:16,029 | INFO | ai_proj | [63ce9081] SUCCESS root | duration=0.0006s
+2026-10-23 13:19:00,270 | INFO | ai_proj | [7680aab1] START clean_text
+2026-10-23 13:19:00,271 | INFO | ai_proj | [7680aab1] SUCCESS clean_text | duration=0.0006s
+2026-10-23 13:19:00,271 | INFO | ai_proj | [43c1a996] START process_document | args={'document_id': '101', 'api_key': "'***REDACTED***'", 'content': "'Example document'"}
+2026-10-23 13:19:01,472 | INFO | ai_proj | [43c1a996] SUCCESS process_document | duration=1.2011s
+2026-10-23 13:19:01,473 | WARNING | ai_proj | [43c1a996] SLOW FUNCTION process_document | duration=1.2011s
+2026-10-23 13:19:01,473 | INFO | ai_proj | [43c1a996] RESULT process_document | 'Processed document 101'
+2026-10-23 13:19:01,473 | DEBUG | asyncio | Using proactor: IocpProactor
+2026-10-23 13:19:01,476 | INFO | ai_proj | [25d69715] START call_ai_model
+2026-10-23 13:19:02,188 | INFO | ai_proj | [25d69715] SUCCESS call_ai_model | duration=0.7121s
+2026-10-23 13:19:02,190 | WARNING | ai_proj | [25d69715] SLOW FUNCTION call_ai_model | duration=0.7121s
+2026-10-23 14:21:31,542 | INFO | ai_proj | [f14f776c] START clean_text
+2026-10-23 14:21:31,542 | INFO | ai_proj | [f14f776c] SUCCESS clean_text | duration=0.0005s
+2026-10-23 14:21:31,542 | INFO | ai_proj | [9529076e] START process_document | args={'document_id': '101', 'api_key': "'***REDACTED***'", 'content': "'Example document'"}
+2026-10-23 14:21:32,743 | INFO | ai_proj | [9529076e] SUCCESS process_document | duration=1.2008s
+2026-10-23 14:21:32,744 | WARNING | ai_proj | [9529076e] SLOW FUNCTION process_document | duration=1.2008s
+2026-10-23 14:21:32,744 | INFO | ai_proj | [9529076e] RESULT process_document | 'Processed document 101'
+2026-10-23 14:21:32,756 | DEBUG | asyncio | Using proactor: IocpProactor
+2026-10-23 14:21:32,759 | INFO | ai_proj | [5cc26d7a] START call_ai_model
+2026-10-23 14:21:33,475 | INFO | ai_proj | [5cc26d7a] SUCCESS call_ai_model | duration=0.7159s
+2026-10-23 14:21:33,475 | WARNING | ai_proj | [5cc26d7a] SLOW FUNCTION call_ai_model | duration=0.7159s
+2026-10-24 07:48:14,253 | INFO | ai_proj | Starting AI Project API
+2026-10-24 07:48:59,662 | INFO | ai_proj | [32f25634] START root
+2026-10-24 07:48:59,663 | INFO | ai_proj | [32f25634] SUCCESS root | duration=0.0006s
+2026-10-24 07:50:02,945 | INFO | ai_proj | [6b8691fa] START health_check
+2026-10-24 07:50:02,946 | INFO | ai_proj | [6b8691fa] SUCCESS health_check | duration=0.0007s
+2026-10-31 03:09:53,921 | INFO | ai_proj | Starting AI Project API
+2026-10-31 03:09:54,014 | INFO | ai_proj | Shared HTTP client initialized. Concurrency limit: 5
+2026-10-31 03:11:26,256 | ERROR | ai_proj | Unexpected error generating AI response
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\W1-D1\src\ai_proj\api\routes.py", line 54, in generate
+    output = await generate_response(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\PyCharmProjects\W1-D1\src\ai_proj\services\ai_service.py", line 32, in generate_response
+    return await generate_openai_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\PyCharmProjects\W1-D1\src\ai_proj\services\ai_service.py", line 52, in generate_openai_response
+    raise RuntimeError(
+        "OPENAI_API_KEY environment variable is not configured."
+    )
+RuntimeError: OPENAI_API_KEY environment variable is not configured.
+2026-10-31 03:11:55,901 | ERROR | ai_proj | Unexpected error generating AI response
+Traceback (most recent call last):
+  File "D:\PyCharmProjects\W1-D1\src\ai_proj\api\routes.py", line 54, in generate
+    output = await generate_response(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\PyCharmProjects\W1-D1\src\ai_proj\services\ai_service.py", line 32, in generate_response
+    return await generate_openai_response(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )
+    ^
+  File "D:\PyCharmProjects\W1-D1\src\ai_proj\services\ai_service.py", line 52, in generate_openai_response
+    raise RuntimeError(
+        "OPENAI_API_KEY environment variable is not configured."
+    )
+RuntimeError: OPENAI_API_KEY environment variable is not configured.
+2026-10-31 03:15:27,855 | INFO | ai_proj | HTTP client closed
+2026-10-31 03:15:27,855 | INFO | ai_proj | Shutting down AI Project API

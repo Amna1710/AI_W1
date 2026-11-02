@@ -1,0 +1,74 @@
+
+{
+    "question_answering": [
+        {
+            "input": {
+                "question": "What is Python?"
+            },
+            "output": {
+                "answer": "Python is a high-level programming language known for its simple syntax and readability."
+            }
+        },
+        {
+            "input": {
+                "question": "What is a Python function?"
+            },
+            "output": {
+                "answer": "A function is a reusable block of code that performs a specific task."
+            }
+        },
+        {
+            "input": {
+                "question": "What is web scraping?"
+            },
+            "output": {
+                "answer": "Web scraping is the process of automatically extracting data from websites."
+            }
+        },
+        {
+            "input": {
+                "question": "What is an API?"
+            },
+            "output": {
+                "answer": "An API allows different software applications to communicate with each other."
+            }
+        }
+    ],
+    "extraction": [
+        {
+            "input": {
+                "text": "John Smith can be contacted at john@example.com.",
+                "fields": ["name", "email"]
+            },
+            "output": {
+                "extracted_data": {
+                    "name": "John Smith",
+                    "email": "john@example.com"
+                }
+            }
+        }
+    ],
+    "classification": [
+        {
+            "input": {
+                "text": "The delivery was very fast and the product is excellent.",
+                "categories": ["Positive", "Negative", "Neutral"]
+            },
+            "output": {
+                "category": "Positive",
+                "confidence": 0.98,
+                "reason": "The customer expresses satisfaction with the delivery and product."
+            }
+        }
+    ],
+    "generation": [
+        {
+            "input": {
+                "task": "Write a short professional email thanking a client."
+            },
+            "output": {
+                "content": "Dear Client, Thank you for your time and cooperation. I appreciate the opportunity to work with you."
+            }
+        }
+    ]
+}

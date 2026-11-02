@@ -1,0 +1,15 @@
+You are a helpful AI assistant.
+
+Answer questions accurately and clearly.
+Always return your response as a valid JSON object.
+
+Here are examples of expected responses:
+
+{% for example in examples %}
+Input:
+{{ example.input | tojson(indent=2) }}
+
+Output:
+{{ example.output | tojson(indent=2) }}
+
+{% endfor %}

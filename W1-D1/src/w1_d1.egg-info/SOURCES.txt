@@ -1,0 +1,15 @@
+pyproject.toml
+src/ai_proj/__init__.py
+src/ai_proj/ai/__init__.py
+src/ai_proj/api/__init__.py
+src/ai_proj/core/__init__.py
+src/ai_proj/models/__init__.py
+src/ai_proj/repositories/__init__.py
+src/ai_proj/schemas/__init__.py
+src/ai_proj/services/__init__.py
+src/ai_proj/tools/__init__.py
+src/w1_d1.egg-info/PKG-INFO
+src/w1_d1.egg-info/SOURCES.txt
+src/w1_d1.egg-info/dependency_links.txt
+src/w1_d1.egg-info/requires.txt
+src/w1_d1.egg-info/top_level.txt
